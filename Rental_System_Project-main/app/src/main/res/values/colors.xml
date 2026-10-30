@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="rental_forest">#173F35</color>
+    <color name="rental_forest_dark">#102F28</color>
+    <color name="rental_ivory">#F6F3EB</color>
+    <color name="rental_white">#FFFFFF</color>
+
+    <color name="rental_text">#253A31</color>
+    <color name="rental_muted">#46564C</color>
+    <color name="rental_border">#DCE4DC</color>
+    <color name="rental_soft_green">#E7EDE5</color>
+    <color name="rental_danger">#B3261E</color>
+</resources>

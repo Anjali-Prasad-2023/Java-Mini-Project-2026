@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share your experience with a room."
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write a Review"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="15dp" />
+
+        <EditText
+            android:id="@+id/etReviewRoomId"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Room ID"
+            android:textColor="#000000"
+            android:textColorHint="#555555"
+            android:textSize="15sp"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="5dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="5"
+            android:layout_marginBottom="15dp" />
+
+        <EditText
+            android:id="@+id/etReviewComment"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Write your review..."
+            android:textColor="#000000"
+            android:textColorHint="#555555"
+            android:textSize="15sp"
+            android:padding="14dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSubmitReview"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="SUBMIT REVIEW"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="#216B50"
+            android:layout_marginBottom="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Reviews"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutReviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNoReviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No reviews submitted yet."
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:gravity="center"
+                android:padding="25dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

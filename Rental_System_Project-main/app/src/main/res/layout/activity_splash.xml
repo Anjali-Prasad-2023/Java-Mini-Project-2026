@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#142D4E">
+
+    <TextView
+        android:id="@+id/tvSplashIcon"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:text="⌂"
+        android:textColor="#20B2AA"
+        android:textSize="90sp"
+        android:fontFamily="sans-serif"
+        android:includeFontPadding="false" />
+
+    <TextView
+        android:id="@+id/tvSplashTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Ghar Mitra"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/tvSplashSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Find your place. Feel at home."
+        android:textColor="#20B2AA"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:fontFamily="sans-serif" />
+
+    <ProgressBar
+        android:id="@+id/splashProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="110dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="42dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#20B2AA"
+        android:progressTint="#20B2AA" />
+
+</LinearLayout>

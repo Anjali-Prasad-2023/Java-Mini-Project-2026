@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Record Rent Payment"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPaymentRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Property"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvPaymentAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Monthly rent"
+            android:textColor="#167447"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Rent month (YYYY-MM)"
+            android:textColor="#222222"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etRentMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="2026-10"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#555555" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Payment date (YYYY-MM-DD)"
+            android:textColor="#222222"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPaymentDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="2026-10-21"
+            android:inputType="date"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#555555" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="How did you pay?"
+            android:textColor="#222222"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerMethod"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Transaction reference (optional)"
+            android:textColor="#222222"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etReference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UPI or bank reference, if available"
+            android:inputType="text"
+            android:maxLines="2"
+            android:textColor="#000000"
+            android:textColorHint="#555555" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="The owner must verify your payment before it is marked as paid."
+            android:textColor="#444444"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnSubmitPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Submit for Verification"
+            android:backgroundTint="#216B50"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rental_ivory"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add a Property"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share the details of your rental."
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:layout_marginBottom="18dp" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/imageScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:fillViewport="false"
+            android:scrollbars="horizontal"
+            android:overScrollMode="ifContentScrolls">
+
+            <LinearLayout
+                android:id="@+id/imagePreviewContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/roomImage"
+                    android:layout_width="280dp"
+                    android:layout_height="190dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/room_placeholder"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Room photo 1" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#216B50"
+            android:text="Select Room Image"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false" />
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_rental_input"
+            android:hint="Room or property title"
+            android:inputType="textCapSentences"
+            android:padding="15dp"
+            android:textColor="#000000"
+            android:textColorHint="#444444" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_rental_input"
+            android:hint="Full address"
+            android:inputType="textPostalAddress|textMultiLine"
+            android:minLines="2"
+            android:padding="15dp"
+            android:textColor="#000000"
+            android:textColorHint="#444444" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_rental_input"
+            android:gravity="top"
+            android:hint="Property description"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minLines="3"
+            android:padding="15dp"
+            android:textColor="#000000"
+            android:textColorHint="#444444" />
+
+        <EditText
+            android:id="@+id/etRent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/bg_rental_input"
+            android:hint="Monthly rent (₹)"
+            android:inputType="numberDecimal"
+            android:padding="15dp"
+            android:textColor="#000000"
+            android:textColorHint="#444444" />
+
+        <Button
+            android:id="@+id/btnAddRoom"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:backgroundTint="#216B50"
+            android:text="Add Property"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

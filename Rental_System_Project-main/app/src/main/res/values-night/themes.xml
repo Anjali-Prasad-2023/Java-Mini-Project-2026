@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.Rental_System"
+        parent="Theme.Material3.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/rental_forest</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/rental_forest_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:colorBackground">@color/rental_ivory</item>
+        <item name="colorSurface">@color/rental_white</item>
+        <item name="colorOnSurface">@color/rental_text</item>
+
+        <item name="android:statusBarColor">@color/rental_forest_dark</item>
+        <item name="android:navigationBarColor">@color/rental_forest_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+
+</resources>
